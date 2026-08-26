@@ -1,0 +1,42 @@
+﻿{
+  "version": 1,
+  "environment": "staging",
+  "global": {
+    "errorRateMax": 0.01,
+    "p95MaxMs": 500,
+    "p99MaxMs": 1000,
+    "minRps": 100
+  },
+  "endpoints": [
+    {
+      "name": "GET /api/products",
+      "method": "GET",
+      "p95MaxMs": 300,
+      "p99MaxMs": 700,
+      "errorRateMax": 0.005,
+      "targetRps": 400
+    },
+    {
+      "name": "POST /api/checkout",
+      "method": "POST",
+      "p95MaxMs": 500,
+      "p99MaxMs": 1200,
+      "errorRateMax": 0.01,
+      "targetRps": 120
+    },
+    {
+      "name": "GET /api/orders/{id}",
+      "method": "GET",
+      "p95MaxMs": 400,
+      "p99MaxMs": 900,
+      "errorRateMax": 0.01,
+      "targetRps": 200
+    }
+  ],
+  "abort": {
+    "errorRateMax": 0.05,
+    "cpuMaxPercent": 90,
+    "memoryMaxPercent": 90,
+    "p99OverSlaFactor": 3
+  }
+}
