@@ -1,4 +1,4 @@
-# QA Performance Toolkit
+# QAI Performance Toolkit - JULIO M.
 
 Conjunto de arquivos para **validação de performance/QA** usando **k6** e **JMeter** como
 ferramentas de carga/stress, com suporte a agentes, skills, regras, specs e MCPs de conexão.
@@ -75,3 +75,15 @@ jmeter -n -t scripts/jmeter/load-test.jmx -l results/load.jtl
 | `k6-gateway` | stdio | Orquestra execução e coleta de métricas do k6 |
 | `jmeter-bridge` | stdio | Dispara planos de teste JMeter e lê resultados `.jtl` |
 | `grafana-observe` | http  | Consulta dashboards e alertas de performance |
+
+
+
+##Copyright
+
+Copyright © 2026 JULIO MISHIMA Todos os direitos reservados.
+
+Este código é proprietário. É proibida a cópia, reprodução, modificação, distribuição ou utilização, total ou parcial, sem autorização prévia e expressa do titular dos direitos.
+
+O acesso ao repositório não concede qualquer licença ou direito de uso.
+
+All Rights Reserved.
