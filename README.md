@@ -1,4 +1,4 @@
-# QAI Performance Toolkit - JULIO M.
+# QAI Performance Toolkit - JULIO Mishima.
 
 Conjunto de arquivos para **validação de performance/QA** usando **k6** e **JMeter** como
 ferramentas de carga/stress, com suporte a agentes, skills, regras, specs e MCPs de conexão.
